@@ -1,0 +1,41 @@
+.body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: auto auto auto auto;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.hover:hover {
+  width: 30%;
+}
+
+.show_more {
+  display: block;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 15px;
+  font-size: 20px;
+  transition: 0.5s;
+}
+.show_more:hover {
+  transition: 0.5s;
+  background: #0d3a3d;
+  color: white;
+  cursor: pointer;
+}
+.more {
+  display: none;
+}
+.show {
+  display: block;
+}

@@ -1,8 +1,8 @@
 import React from 'react';
 import './Header.css';
 import Image from '../../assets/image/img-1.svg';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faCartShopping } from '@fortawesome/free-solid-svg-icons';
+import Cart from '../../assets/icon/cart.svg';
+import Search from '../../assets/icon/search.svg';
 
 function Header() {
   return (
@@ -21,7 +21,6 @@ function Nav() {
       <ul className="menu_container">
         <MenuLink textContet={'Home'} />
         <MenuLink textContet={'Product'} />
-        <MenuLink textContet={'About'} />
         <MenuLink textContet={'Contact'} />
       </ul>
     </div>
@@ -48,9 +47,9 @@ function Body() {
       <div className="search_cart">
         <div className="search">
           <input type="text" placeholder="Search for items" />
-          <FontAwesomeIcon className="search_icon" icon={faSearch} />
+          <img className="search_icon" src={Search} alt="search" />
         </div>
-        <FontAwesomeIcon className="cart" icon={faCartShopping} />
+        <img className="cart" src={Cart} alt="Cart" />
       </div>
     </div>
   );

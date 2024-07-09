@@ -1,4 +1,4 @@
-.general_slider_contntainer {
+.general_slider_container {
   overflow: hidden;
   width: 100%;
 }
@@ -70,18 +70,17 @@
 }
 
 .prod_container {
-  width: 23%;
-
+  width: 94%;
   margin: 10px;
 }
 
 .prod_name_price {
+  padding-right: 10px;
   font-family: roboto;
   display: flex;
   margin: 5px;
   justify-content: space-between;
-}
-.prod_name_price p {
+  width: 94%;
   margin: 5px 0;
 }
 
@@ -106,6 +105,7 @@
   text-align: center;
   font-size: 16px;
   transition: 0.5s;
+  background: #0d3a3d;
 }
 .add_cart_btn:hover {
   transition: 0.5s;

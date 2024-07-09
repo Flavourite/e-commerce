@@ -1,6 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './Slider.css';
 import Image from '../../assets/image/img-1.svg';
+import Image2 from '../../assets/image/img-2.svg';
+import Image3 from '../../assets/image/img-3.svg';
+import Image4 from '../../assets/image/img-4.svg';
+import Image5 from '../../assets/image/img-5.svg';
+import Image6 from '../../assets/image/img-6.svg';
+import SliderImage from '../SliderImage/SliderImage';
 
 function Slider() {
   const sliderRef = useRef(null);
@@ -46,12 +52,12 @@ function Slider() {
           transition: 'transform 0.5s ease',
         }}
       >
-        <SliderImage />
-        <SliderImage />
-        <SliderImage />
-        <SliderImage />
-        <SliderImage />
-        <SliderImage />
+        <SliderImage image={Image} />
+        <SliderImage image={Image2} />
+        <SliderImage image={Image3} />
+        <SliderImage image={Image4} />
+        <SliderImage image={Image5} />
+        <SliderImage image={Image6} />
       </div>
       <div className="slider_control">
         <div className="dots">
@@ -72,28 +78,6 @@ function Slider() {
         </div>
       </div>
     </div>
-  );
-}
-
-function SliderImage() {
-  return (
-    <section className="prod_container">
-      <div className="slider_img_container">
-        <img className="slider_img" src={Image} alt="img" />
-      </div>
-      <div className="prod_name_price">
-        <div>
-          <h3 className="header">Product Name</h3>
-          <p>Lorem ipsum</p>
-        </div>
-        <p className="price">$55</p>
-      </div>
-      <div>
-        <a className="add_cart_btn" href="./index.html">
-          Add to cart
-        </a>
-      </div>
-    </section>
   );
 }
 
